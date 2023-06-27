@@ -56,10 +56,11 @@ Es con este UID que vamos a autenticar el carnet leído con el RC522.
 El servomotor es la salida principal del proyecto, este será el mecanismo activo a la hora de abrir el casillero, es decir, para abrirse se posiciona a 90° mientras que a cerrarse esta posicionado en 180°. Esto se consigue mediante el ciclo de trabajo que se le entrega al servo por medio de un PWM.
 
 El servo tiene un periodo de funcionamiento de 20ms, y lo que se hace es darle un ciclo de trabajo de 5% para posicionar el cierre, mientras que para abrir nuestro sistema le asigmos un2% de ciclode trabajo.
+
 ![Servo](https://github.com/davmorago/Proyecto-Digital-I/assets/135071520/c8ac5ac5-1a23-45fd-b00c-26421aa2842b)
 
-### Tecla matricial
-
+### Teclado matricial
+El teclado es un perifercio de entrada del proyecto. Funciona alimentando una de las filas dy se lee cual columna fue presionada en dich fila , para hacer que funcione el teclado completo se alimentaba uno por una las filas mediante un registro de desplazamiento con una frecuencia concreta tal que fuera lo suficientemente rápida para que al presionar cualquier tecla en cualquier momento, esta se leyera correctamente. De esta manera se almacenaba la fila alimentaba y la columna que se presionaba para saber la ubicación de la tecla.
 ### Buzzer
 Como de buzzer de la FPGA es un buzzer activo, solo necesita alimentación para funcionar. Por lo cual, cada vez que presionamos una tecla del teclado matricial alimentamos el buzzer.
 
@@ -88,6 +89,10 @@ Al cambiar el ciclo útil a 2% obtenemos el servo abierto (Estado en 0). Esto se
 ![Sim_Teclado](https://github.com/davmorago/Proyecto-Digital-I/assets/135071520/c9354cfa-cc08-4f9b-afc2-eb960590bf41)
 
 La anterior imagen muestra el funcionamiento de la lectura de los números ingresados en el teclado matricial. La primera señal que se puede ver es el clock, la segunda es un vector de 4 bits que indica cual columna fue presionada, la tercera señal es el desplazamiento de la alimentación de las filas, la cuarta es un vector de ocho bits que almacena la columna y la fila donde se encuentra la tecla presionada, la quinta señal es la activación del buzzer al presionar una tecla, la cual se encuentra en cero cuando debe sonar, ya que la salida en la FPGA está negada, la última señal corresponde a la conversión de lo leído a bcd.
+
+##Evidencia de la implementación
+![WhatsApp Image 2023-06-27 at 6 07 44 PM](https://github.com/davmorago/Proyecto-Digital-I/assets/135071520/4d08e6d9-d78d-4842-ad58-38d514a1d37c)
+
 
 ## Video del funcionamiento del proyecto
 
