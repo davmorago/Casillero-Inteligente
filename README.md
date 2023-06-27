@@ -27,3 +27,5 @@ Los estudiantes de la Universidad Nacional en especial los de ingeniería, para 
 *Social: Los estudiantes pueden ahorrar tiempo y a su vez optimizarlo gracias a tener muchos de sus trabajos, pertenencias y demás en la misma universidad. Esto puede afectar indirectamente en la convivencia entre los estudiantes y a su vez dar más tranquilidad de no cometer una equivocación que afecte el rendimiento académico y mental de los estudiantes.
 
 *Tecnológico: Esto puede ayudar a la universidad a destacar como una institución avanzada y moderna, ya que estamos en una de las universidades más prestigiosas del país. También puede ayudar a mejorar la eficiencia y la productividad de la gestión del espacio de almacenamiento, lo que a su vez puede liberar tiempo para que el personal de la universidad se centre en otras tareas importantes.
+
+
