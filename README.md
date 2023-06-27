@@ -7,7 +7,8 @@ David Santiago Mora Godoy
 
 Juan David Suarez Sanchez
 
-![cAJAfINAL](https://github.com/davmorago/Proyecto-Digital-I/assets/135071520/dc7a9b87-2742-44b0-9f2c-10d035d8f0dc)
+![cAJAfINAL](https://github.com/davmorago/Casillero-Inteligente/assets/135071520/97f7dbb0-6815-42b3-8268-2b31e7ce4de5)
+
 
 ## Descripción del proyecto
 
