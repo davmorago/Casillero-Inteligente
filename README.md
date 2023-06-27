@@ -1,5 +1,5 @@
 # Proyecto-Digital-I 
-# Casilleros automáticos 
+# Casillero Inteligente
 ## Integrantes del grupo
 Diego Alejandro Maldonado Marin
 
