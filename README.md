@@ -52,6 +52,14 @@ Es con este UID que vamos a autenticar el carnet leído con el RC522.
 
 ![rfid2](https://github.com/davmorago/Proyecto-Digital-I/assets/135071520/861b6dbe-8ed8-43b6-8941-4ca4fa46dbca)
 
+### Servomotor
+El servomotor es la salida principal del proyecto, este será el mecanismo activo a la hora de abrir el casillero, es decir, para abrirse se posiciona a 90° mientras que a cerrarse esta posicionado en 180°. Esto se consigue mediante el ciclo de trabajo que se le entrega al servo por medio de un PWM.
+
+El servo tiene un periodo de funcionamiento de 20ms, y lo que se hace es darle un ciclo de trabajo de 5% para posicionar el cierre, mientras que para abrir nuestro sistema le asigmos un2% de ciclode trabajo.
+![Servo](https://github.com/davmorago/Proyecto-Digital-I/assets/135071520/c8ac5ac5-1a23-45fd-b00c-26421aa2842b)
+
+### Tecla matricial
+
 ### Buzzer
 Como de buzzer de la FPGA es un buzzer activo, solo necesita alimentación para funcionar. Por lo cual, cada vez que presionamos una tecla del teclado matricial alimentamos el buzzer.
 
@@ -91,4 +99,5 @@ https://github.com/davmorago/Proyecto-Digital-I/assets/135071520/b6b5a163-fecd-4
 - Datasheet Servomotor: https://datasheetspdf.com/pdf-file/791970/TowerPro/SG90/1
 - Datasheet RFID: https://pdf1.alldatasheet.es/datasheet-pdf/view/227840/NXP/RC522.html
 - Datasheet Arduino: http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf
-- 
+- Librerias vhdl (RFID): https://intesc.mx/librerias-vhdl/
+- VHDL Lenguaje para síntesis y modelado de circuitos por Fernando Pardo y José Boluda
