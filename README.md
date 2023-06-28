@@ -110,7 +110,7 @@ La anterior imagen muestra el funcionamiento de la lectura de los números ingre
 
 
 https://github.com/davmorago/Casillero-Inteligente/assets/135071520/2cb1adef-912e-48d5-b77e-72e78b5b9ff6
-https://studio.youtube.com/video/yVcmEgmIJBk/edit
+[https://studio.youtube.com/video/yVcmEgmIJBk/edit](https://www.youtube.com/watch?v=yVcmEgmIJBk)
 
 
 
