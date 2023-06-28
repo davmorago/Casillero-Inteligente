@@ -6,8 +6,7 @@ Diego Alejandro Maldonado Marin
 David Santiago Mora Godoy
 
 Juan David Suarez Sanchez
-
-![cAJAfINAL](https://github.com/davmorago/Casillero-Inteligente/assets/135071520/97f7dbb0-6815-42b3-8268-2b31e7ce4de5)
+![Alt text](https://github.com/davmorago/Casillero-Inteligente/blob/main/cAJAfINAL.jpg)
 
 
 ## Descripción del proyecto
@@ -43,7 +42,8 @@ Conseguir nuevos ingresos para la universidad, de los cuales podrán salir benef
 ### RFID
 Para leer tarjetas RFID se va a utilizar el lector RC522 el cual está capacitado para leer tarjetas con la tecnología MIFARE, esta tecnología es la que usan los carnets estudiantiles de la universidad nacional. La información de estas tarjetas se almacena de la siguiente manera.
 
-![rfid](https://github.com/davmorago/Proyecto-Digital-I/assets/135071520/0a538f6f-52b0-46d8-90e3-34cdcc859a3e)
+![Alt text](https://github.com/davmorago/Casillero-Inteligente/blob/main/rfid.png)
+
 
 Dependiendo de de la capacidad de la tarjeta se tienen 16 o más sectores donde cada sector tendrá 4 bloques de 16 Bytes, el primer bloque de cada sector siempre se reserva para almacenar las claves de acceso y directivas de todo el sector.
 
@@ -51,48 +51,59 @@ Cada tarjeta tiene un identificador único (UID) que está reservado en los prim
 
 Es con este UID que vamos a autenticar el carnet leído con el RC522.
 
-![rfid2](https://github.com/davmorago/Proyecto-Digital-I/assets/135071520/861b6dbe-8ed8-43b6-8941-4ca4fa46dbca)
+![Alt text](https://github.com/davmorago/Casillero-Inteligente/blob/main/rfid2.png)
+
 
 ### Servomotor
 El servomotor es la salida principal del proyecto, este será el mecanismo activo a la hora de abrir el casillero, es decir, para abrirse se posiciona a 90° mientras que a cerrarse esta posicionado en 180°. Esto se consigue mediante el ciclo de trabajo que se le entrega al servo por medio de un PWM.
 
 El servo tiene un periodo de funcionamiento de 20ms, y lo que se hace es darle un ciclo de trabajo de 5% para posicionar el cierre, mientras que para abrir nuestro sistema le asigmos un2% de ciclode trabajo.
 
-![Servo](https://github.com/davmorago/Proyecto-Digital-I/assets/135071520/c8ac5ac5-1a23-45fd-b00c-26421aa2842b)
+![Alt text](https://github.com/davmorago/Casillero-Inteligente/blob/main/Servo.png)
+
 
 ### Teclado matricial
 El teclado es un perifercio de entrada del proyecto. Funciona alimentando una de las filas dy se lee cual columna fue presionada en dich fila , para hacer que funcione el teclado completo se alimentaba uno por una las filas mediante un registro de desplazamiento con una frecuencia concreta tal que fuera lo suficientemente rápida para que al presionar cualquier tecla en cualquier momento, esta se leyera correctamente. De esta manera se almacenaba la fila alimentaba y la columna que se presionaba para saber la ubicación de la tecla.
 ### Buzzer
 Como de buzzer de la FPGA es un buzzer activo, solo necesita alimentación para funcionar. Por lo cual, cada vez que presionamos una tecla del teclado matricial alimentamos el buzzer.
 
-![buzzer](https://github.com/davmorago/Proyecto-Digital-I/assets/135071520/959433ee-9347-42da-bf17-867f6e7ec700)
+![Alt text](https://github.com/davmorago/Casillero-Inteligente/blob/main/buzzer.png)
+
 
 ## Diagrama de bloques
-![DiagramaBloques](https://github.com/davmorago/Proyecto-Digital-I/assets/135071520/eb802d76-0602-4ebe-b82d-f9f1b2c00b16)
+![Alt text](https://github.com/davmorago/Casillero-Inteligente/blob/main/DiagramaBloques.png)
+
 
 ## Diagrama de estados
-![DiagramaEstados](https://github.com/davmorago/Proyecto-Digital-I/assets/135071520/d6711c33-e5db-42b4-ad52-3dd1a5fc92c5)
+![Alt text](https://github.com/davmorago/Casillero-Inteligente/blob/main/DiagramaEstados.png)
+
 
 ## Diagrama de Flujo
-![DiagramaFlujo](https://github.com/davmorago/Proyecto-Digital-I/assets/135071520/bcd1c8c0-4f3d-4006-a29c-bf02fd29e88e)
+![Alt text](https://github.com/davmorago/Casillero-Inteligente/blob/main/DiagramaFlujo.png)
+
 
 ## Simulaciones
 ### Servomotor
 La siguiente imagen muestra la señal de salida del servo cuando este está cerrado (Estado en 1). Se observa que el ciclo útil aplicado para este caso es de 5%:
 
-![ServoCerrado](https://github.com/davmorago/Proyecto-Digital-I/assets/135071520/9a1ceb4d-ea4c-4f5a-b636-55a1ec0f0c70)
+![Alt text](https://github.com/davmorago/Casillero-Inteligente/blob/main/ServoCerrado.png)
+
 
 Al cambiar el ciclo útil a 2% obtenemos el servo abierto (Estado en 0). Esto se muestra en la figura a continuación.
 
-![ServaAbierto](https://github.com/davmorago/Proyecto-Digital-I/assets/135071520/e19799f2-a7bc-44b4-8d68-eaddc5015cd4)
+![Alt text](https://github.com/davmorago/Casillero-Inteligente/blob/main/ServaAbierto.png)
+
 ### Teclado matricial
 
-![Sim_Teclado](https://github.com/davmorago/Proyecto-Digital-I/assets/135071520/c9354cfa-cc08-4f9b-afc2-eb960590bf41)
+![Alt text](https://github.com/davmorago/Casillero-Inteligente/blob/main/Sim_Teclado.png)
+
 
 La anterior imagen muestra el funcionamiento de la lectura de los números ingresados en el teclado matricial. La primera señal que se puede ver es el clock, la segunda es un vector de 4 bits que indica cual columna fue presionada, la tercera señal es el desplazamiento de la alimentación de las filas, la cuarta es un vector de ocho bits que almacena la columna y la fila donde se encuentra la tecla presionada, la quinta señal es la activación del buzzer al presionar una tecla, la cual se encuentra en cero cuando debe sonar, ya que la salida en la FPGA está negada, la última señal corresponde a la conversión de lo leído a bcd.
 
 ##Evidencia de la implementación
-![WhatsApp Image 2023-06-27 at 6 07 44 PM](https://github.com/davmorago/Proyecto-Digital-I/assets/135071520/4d08e6d9-d78d-4842-ad58-38d514a1d37c)
+
+![Alt text](https://github.com/davmorago/Casillero-Inteligente/blob/main/WhatsApp.png)
+
 
 
 ## Video del funcionamiento del proyecto
