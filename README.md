@@ -79,7 +79,7 @@ Como de buzzer de la FPGA es un buzzer activo, solo necesita alimentación para 
 
 
 ## Diagrama de Flujo
-![Alt text](https://github.com/davmorago/Casillero-Inteligente/blob/main/DiagramaFlujo.png)
+![Alt text](https://github.com/davmorago/Casillero-Inteligente/blob/main/DiagramaFlujo.PNG)
 
 
 ## Simulaciones
@@ -102,14 +102,16 @@ La anterior imagen muestra el funcionamiento de la lectura de los números ingre
 
 ##Evidencia de la implementación
 
-![Alt text](https://github.com/davmorago/Casillero-Inteligente/blob/main/WhatsApp.png)
+![Alt text](https://github.com/davmorago/Casillero-Inteligente/blob/main/WhatsApp.jpeg)
 
 
 
 ## Video del funcionamiento del proyecto
 
 
-https://github.com/davmorago/Proyecto-Digital-I/assets/135071520/b6b5a163-fecd-4879-b8bb-0fd308bd0ffe
+https://github.com/davmorago/Casillero-Inteligente/assets/135071520/2cb1adef-912e-48d5-b77e-72e78b5b9ff6
+
+
 
 
 ## Referencias
